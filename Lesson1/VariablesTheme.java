@@ -65,15 +65,15 @@ public class VariablesTheme {
         System.out.println("    Новые значения: " + num1 + " и " + num2 + "\n");
         System.out.println("    Перестановка с помощью арифметических операций");
         System.out.println("    Исходные значения: " + num1 + " и " + num2);
-        num3 = num1 + num2;
-        num1 = num3 - num1;
-        num2 = num3 - num2;
+        num1 += num2;
+        num2 = num1 - num2;
+        num1 -= num2;
         System.out.println("    Новые значения: " + num1 + " и " + num2 + "\n");
         System.out.println("    Перестановка с помощью побитовой операции ^");
         System.out.println("    Исходные значения: " + num1 + " и " + num2);
-        num3 = num1 ^ num2;
-        num1 = num1 ^ num3;
-        num2 = num2 ^ num3;
+        num1 ^= num2;
+        num2 = num1 ^ num2;
+        num1 ^= num2;
         System.out.println("    Новые значения: " + num1 + " и " + num2 + "\n");
 
         // TODO: 6. Вывод символов и их кодов
